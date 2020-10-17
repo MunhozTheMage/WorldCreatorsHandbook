@@ -1,0 +1,36 @@
+.box-select {
+    background: #ddd1ad3d;
+    width: 33vw;
+    height: 25vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Redressed', cursive;
+    font-weight: normal;
+    color: #44433fde;
+    border-radius: 30px;
+    border: 5px solid #CDC3A5;
+    transition: 400ms;
+}
+
+.box-select img {
+    height: 50%;
+    transition: 400ms;
+}
+
+.box-select h2 {
+    width: 60%;
+}
+
+.box-select:hover {
+    background: #fffbec57;
+    color: #44433f8f;
+    border: 5px solid #aaa492ad;
+}
+
+.box-select:hover > img {
+    opacity: 0.8;
+}

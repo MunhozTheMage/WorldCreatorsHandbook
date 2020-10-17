@@ -1,0 +1,33 @@
+img {
+    height: 30px;
+}
+
+.landing-page {
+    width: 100vw;
+    height: 100vh;
+    background: #FFF8DC;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.landing-header {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-header h1 {
+    color: #6C685C;
+    font-size: 95px;
+}
+
+.landing-header p {
+    font-size: 22px;
+    letter-spacing: 7px;
+}
+
+.landing-header img {
+    height: 100px;
+}
