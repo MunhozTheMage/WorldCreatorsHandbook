@@ -1,0 +1,37 @@
+/*
+{
+    name: String,
+    description: String,
+    image: String,
+    categories: [
+        {
+            name: String,
+            description: String,
+            image: String,
+            element_content: [
+                {
+                    name: String,
+                    type: String,
+                }
+
+                ...
+            ],
+            elements: [
+                {
+                    name: String,
+                    description: String,
+                    image: String,
+                    x_field_name: ???,
+                    y_field_name: ???,
+                    z_field_name: ???,
+                    ...
+                }
+
+                ...
+            ],
+        },
+
+        ...
+    ]
+}
+*/
