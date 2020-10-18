@@ -1,0 +1,38 @@
+.main-header {
+    background: #968E78;
+    height: calc(16vh + 30px);
+}
+
+.main-header .upper-header div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-header .upper-header {
+    display: flex;
+    align-items: center;
+    height: 16vh;
+    background: #968E78;
+    justify-content: center;
+}
+
+.main-header .upper-header img {
+    height: min(9vw, 140px);
+    padding-bottom: 12px;
+}
+
+.main-header .upper-header h1 {
+    color: #CDC3A5;
+    font-size: min(7vw, 110px);
+}
+
+.main-header .lower-header {
+    background: #CDC2A4;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF8DC;
+    letter-spacing: 6px;
+    font-size: min(2vw, 20px);
+}

@@ -1,19 +1,21 @@
 .box-select {
     background: #ddd1ad3d;
-    width: 33vw;
-    height: 25vw;
-    padding: 40px;
+    width: min(33vw, 445px);
+    height: min(25vw, 337px);
+    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Redressed', cursive;
     font-weight: normal;
     color: #44433fde;
     border-radius: 30px;
     border: 5px solid #CDC3A5;
     transition: 400ms;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .box-select img {
@@ -23,6 +25,7 @@
 
 .box-select h2 {
     width: 60%;
+    font-size: min(32px, 3vw / 1.5 );
 }
 
 .box-select:hover {
@@ -33,4 +36,9 @@
 
 .box-select:hover > img {
     opacity: 0.8;
+}
+
+.box-select p {
+    font-size: min(2vw, 22px);
+    width: 75%
 }

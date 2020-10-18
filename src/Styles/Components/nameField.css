@@ -1,0 +1,32 @@
+.name-field {
+    width: 70vw;
+    max-width: 700px;
+    font-family: 'Redressed', cursive;
+}
+
+.name-field input,
+.name-field label {
+    width: 100%;
+}
+
+.name-field input {
+    height: 35px;
+    border-radius: 5px;
+    border: 3px solid #CDC3A5;
+    background: #ddd1ad3d;
+    margin-top: 6px;
+    transition: 300ms;
+    text-align: center;
+}
+
+.name-field input:focus {
+    border: 4px solid #a79f87;
+    background: #ddd1ad60;
+}
+
+.name-field label {
+    font-weight: bold;
+    color: #44433fa8;
+    font-size: 20px;
+    padding-bottom: 10px;
+}

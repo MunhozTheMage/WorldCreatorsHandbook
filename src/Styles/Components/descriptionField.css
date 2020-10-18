@@ -1,0 +1,37 @@
+.description-field {
+    width: 70vw;
+    max-width: 700px;
+    font-family: 'Redressed', cursive;
+}
+
+.description-field textarea,
+.description-field label {
+    width: 100%;
+}
+
+.description-field textarea {
+    resize: none;
+    height: 350px;
+    max-height: 40vh;
+    border-radius: 5px;
+    border: 3px solid #CDC3A5;
+    padding-left: 10px;
+    background: #ddd1ad3d;
+    margin-top: 6px;
+    font-size: 18px;
+    padding: 20px;
+    transition: 300ms;
+    text-align: justify;
+}
+
+.description-field textarea:focus {
+    border: 5px solid #a79f87;
+    background: #ddd1ad60;
+}
+
+.description-field label {
+    font-weight: bold;
+    color: #44433fa8;
+    font-size: 20px;
+    padding-bottom: 10px;
+}

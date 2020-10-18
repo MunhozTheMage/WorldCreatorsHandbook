@@ -1,7 +1,3 @@
-img {
-    height: 30px;
-}
-
 .landing-page {
     width: 100vw;
     height: 100vh;
@@ -20,14 +16,54 @@ img {
 
 .landing-header h1 {
     color: #6C685C;
-    font-size: 95px;
+    font-size: min(8vw, 95px);
 }
 
 .landing-header p {
-    font-size: 22px;
+    font-size: min(2vw, 22px);
     letter-spacing: 7px;
+    max-width: 90%;
 }
 
 .landing-header img {
     height: 100px;
+}
+
+/*
+======================================
+New Project Area
+======================================
+*/
+
+.new-project-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-project-area .name-field,
+.new-project-area .description-field {
+    max-width: 600px;
+}
+
+.new-project-area button {
+    margin-top: 5px;
+    height:30px;
+    width: 20%;
+    background: #ddd1ad80;
+    border-radius: 5px;
+    border: 3px solid #6c685c46;
+    color: #6c685ca8;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Redressed', cursive;
+    transition: 200ms;
+}
+
+.new-project-area button:hover {
+    background: #eee5cca1;
+    border: 3px solid #6c685c1f;
+    color: #96928783;
 }
