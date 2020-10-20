@@ -17,6 +17,8 @@
     margin-top: 6px;
     transition: 300ms;
     text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
 }
 
 .name-field input:focus {

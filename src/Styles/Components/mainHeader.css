@@ -24,6 +24,7 @@
 .main-header .upper-header h1 {
     color: #CDC3A5;
     font-size: min(7vw, 110px);
+    font-family: 'Playfair Display', serif;
 }
 
 .main-header .lower-header {
@@ -35,4 +36,5 @@
     color: #FFF8DC;
     letter-spacing: 6px;
     font-size: min(2vw, 20px);
+    font-family: 'Playfair Display', serif;
 }

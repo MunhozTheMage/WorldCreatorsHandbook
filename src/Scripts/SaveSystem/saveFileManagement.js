@@ -1,3 +1,5 @@
+import createSaveObject from './saveObject.js';
+
 const { saveFile, loadFile } = electron.fileApi;
 
 export function save(saveObj = {}) {
@@ -26,5 +28,22 @@ export function load() {
     }
 
     return loadFile(config);
+}
+
+export function newSaveFromConfig(name, description, image, cb) {
+    let saveObj = createSaveObject(name, description, image);
+    let saveDir = save(saveObj);
+
+    if(!saveDir) return;
+
+    cb({data: saveObj, dir: saveDir});
+}
+
+export function loadSaveFile(cb) {
+    let save = load();
+
+    if(!save.path) return;
+
+    cb({data: JSON.parse(save.file), dir: save.path});
 }
 

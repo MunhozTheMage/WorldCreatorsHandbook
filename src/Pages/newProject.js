@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 
 import "../Styles/Pages/newProject.css";
 
-import { save } from '../Scripts/SaveSystem/saveFileManagement.js';
-import createSaveObject from '../Scripts/SaveSystem/saveObject.js';
+import { newSaveFromConfig } from '../Scripts/SaveSystem/saveFileManagement.js';
 
 import MainHeader from '../Components/mainHeader.js';
 import BoxSelector from '../Components/boxSelector.js';
@@ -24,16 +23,13 @@ export default function NewProject(props) {
         _setNewProjectForm(copy);
     }
 
-    function newSaveFromConfig() {
-        let { name, description } = newProjectForm;
-        let saveObj = createSaveObject(name, description, "");
-        let saveDir = save(saveObj);
-
-        if(!saveDir) return;
-
-        console.log({data: saveObj, dir: saveDir});
-        appInfo.set.loadedSaveFile({data: saveObj, dir: saveDir});
-        appInfo.set.page("next");
+    function sendForm() {
+        var { name, description } = newProjectForm;
+        newSaveFromConfig(name, description, "", (save) => {
+            console.log(save);
+            appInfo.set.loadedSaveFile(save);
+            appInfo.set.page("projectHome");
+        });
     }
 
     return (
@@ -72,7 +68,7 @@ export default function NewProject(props) {
                     changeHandler={(e) => {setNewProjectForm('description', e.target.value)}}
                 />
                 <button
-                    onClick={newSaveFromConfig}
+                    onClick={sendForm}
                 >Create</button>
             </div>
             : null }

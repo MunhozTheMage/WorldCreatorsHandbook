@@ -1,0 +1,29 @@
+.round-icon-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background: #CDC2A4;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-icon-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.round-icon-button.disabled {
+    background: #cdc2a456;
+    cursor: default;
+}
+
+.round-icon-button.disabled img {
+    opacity: 0.75;
+}
+
+.round-icon-button:hover,
+.round-icon-button:focus {
+    opacity: 0.75;
+}

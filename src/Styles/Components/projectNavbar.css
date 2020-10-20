@@ -1,0 +1,57 @@
+.navbar {
+    background: #968E78;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .options {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.navbar .options .nav-name {
+    color: #FFF8DC;
+    padding: 2px 1.4vw 5px 1.4vw;
+    margin-top: 4px;
+    border-radius: 4px 4px 0 0;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+.navbar .options .nav-name:hover {
+    background: #c2b89d50;
+}
+
+.navbar .options .selected,
+.navbar .options .nav-name.selected:hover {
+    background: #FFF8DC;
+    padding: 2px 1.4vw 5px 1.4vw;
+    margin-top: 4px;
+    border-radius: 4px 4px 0 0;
+    color: #706a598c;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    cursor: default;
+}
+
+.navbar .round-icon-button {
+    margin-top: 3px;
+    width: 28px;
+    height: 28px;
+}
+
+.navbar .round-icon-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.navbar .arrow-left img {
+    padding-right: 3px;
+}
+
+.navbar .arrow-right img {
+    padding-left: 3px;
+}

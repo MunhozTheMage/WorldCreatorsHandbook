@@ -28,6 +28,7 @@ export default function DescriptionField(props) {
                 <textarea
                     value={value}
                     onChange={handleChange}
+                    spellCheck="false"
                 ></textarea>
             </label>
         </div>

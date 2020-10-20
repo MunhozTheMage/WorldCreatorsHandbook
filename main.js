@@ -53,7 +53,7 @@ ipcMain.on("load-file", (e, config) => {
             return;
         }
         let file = fs.readFileSync(path);
-        e.returnValue = file.toString();
+        e.returnValue = { file: file.toString(), path };
     } 
     catch (error) {
         console.log(error);

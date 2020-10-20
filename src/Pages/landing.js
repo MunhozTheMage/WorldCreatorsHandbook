@@ -2,12 +2,22 @@ import React, { useState } from 'react';
 
 import "../Styles/Pages/landing.css";
 
+import { loadSaveFile } from "../Scripts/SaveSystem/saveFileManagement";
+
 import BoxSelector from '../Components/boxSelector.js';
 
 export default function Landing(props) {
     var { 
         appInfo
     } = props;
+
+    function buttonLoad() {
+        loadSaveFile((save) => {
+            console.log(save);
+            appInfo.set.loadedSaveFile(save);
+            appInfo.set.page("projectHome");
+        });
+    }
 
     return (
         <div className="landing-page">
@@ -25,7 +35,7 @@ export default function Landing(props) {
                 rightMainText="Continue to Work on Your World"
 
                 leftOnclick={() => {appInfo.set.page("newProject")}}
-                rightOnclick={() => {}}
+                rightOnclick={buttonLoad}
             />
         </div>
     )

@@ -1,0 +1,77 @@
+.project-home {
+    background: #FFF8DC;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project-home .content-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.project-home .content {
+    width: 90%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-self: center;
+}
+
+.project-home .content .image-container {
+    height: min(65vh, 30vw * 1.5);
+    width: min(65vh / 1.5, 30vw);
+    background-size: cover;
+    border-radius: 15px;
+    align-self: center;
+}
+
+.project-home .content .text-container {
+    height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.project-home .content .text-container h2 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: calc(20px - 2vh);
+    font-size: min(8vh, 5vw);
+    font-family: 'Playfair Display', serif;
+    color: #968E78;
+}
+
+.project-home .content .text-container .description {
+    height: 80%;
+    overflow: hidden scroll;
+    border-top: 1px solid #968E78;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 1.5vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.project-home .content .text-container .description p {
+    padding-top: 8px;
+    color: #6C685C;
+    letter-spacing: 1px;
+}
+
+.project-home .buttons-menu {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-menu button {
+    margin: 5px;
+    margin-right: 0;
+}

@@ -8,11 +8,11 @@ export default function MainHeader() {
             <div className="upper-header">
                 <div>
                     <img src="./assets/images/ico_quill_ink_MEDIUM.svg"></img>
-                    <h1>World Creator's Handbook</h1>
+                    <h1 className="noselect">World Creator's Handbook</h1>
                 </div>
             </div>
             <div className="lower-header">
-                <h4>Brought to you by MunhozTheMage</h4>
+                <h4 className="noselect">Brought to you by MunhozTheMage</h4>
             </div>
         </header>
     )

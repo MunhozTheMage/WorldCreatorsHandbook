@@ -34,7 +34,7 @@ Form Page
     position: absolute;
     bottom: 0px;
     height: 55%;
-    border-top: 2px solid black;
+    border-top: 5px double #6C685C;
     padding-top: 50px;
     padding-bottom: 10px;
 }
