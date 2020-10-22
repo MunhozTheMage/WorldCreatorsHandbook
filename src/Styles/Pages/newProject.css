@@ -22,19 +22,3 @@
     padding: calc(10.5vh - 2vw) 30% 0 30%;
     color: #6C685C;
 }
-
-/*
-======================================
-Form Page
-======================================
-*/
-
-.new-project .new-project-area {
-    overflow-y: scroll;
-    position: absolute;
-    bottom: 0px;
-    height: 55%;
-    border-top: 5px double #6C685C;
-    padding-top: 50px;
-    padding-bottom: 10px;
-}

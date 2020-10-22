@@ -24,7 +24,14 @@ export default function ProjectNavbar(props) {
             className={`nav-name noselect ${
                 id + range === appInfo.get.navPage ? "selected" : ""
             }`} 
-            key={`nav-name-${id}`}>
+            key={`nav-name-${id}`}
+            onClick={ id === 0 ? 
+                () => {appInfo.set.page("projectHome")} : 
+                () => { 
+                    app.set.navPage(id);
+                    app.set.page("categoryHome");
+                } }
+            >
                 <p>{name}</p>
             </div>
             )

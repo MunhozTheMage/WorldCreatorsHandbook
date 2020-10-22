@@ -1,0 +1,29 @@
+.project-form-area {
+    width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0px;
+    height: 55%;
+    border-top: 5px double #6C685C;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-form-area button {
+    margin-top: 15px;
+    padding: 3px 18px;
+    background: #ddd1ad3d;
+    font-size: 25px;
+    border: 3px solid #968e786e;
+    border-radius: 5px;
+    font-family: 'Redressed', cursive;
+    color: #6c685ccc;
+}
+
+.project-form-area button:hover,
+.project-form-area button:focus {
+    opacity: 0.6;
+}

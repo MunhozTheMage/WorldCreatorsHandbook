@@ -6,25 +6,14 @@ import { newSaveFromConfig } from '../Scripts/SaveSystem/saveFileManagement.js';
 
 import MainHeader from '../Components/mainHeader.js';
 import BoxSelector from '../Components/boxSelector.js';
-import NameField from '../Components/Fields/nameField.js';
-import DescriptionField from '../Components/Fields/descriptionField.js';
+import ProjectForm from '../Components/projectForm.js';
 
 export default function NewProject(props) {
     var { appInfo } = props;
 
     const [ display, setDisplay ] = useState("main");
-    const [ newProjectForm, _setNewProjectForm ] = useState({
-        name: "", description: "",
-    });
 
-    function setNewProjectForm(fieldname, newValue) {
-        let copy = {...newProjectForm};
-        copy[fieldname] = newValue;
-        _setNewProjectForm(copy);
-    }
-
-    function sendForm() {
-        var { name, description } = newProjectForm;
+    function sendForm({ name, description }) {
         newSaveFromConfig(name, description, "", (save) => {
             console.log(save);
             appInfo.set.loadedSaveFile(save);
@@ -42,7 +31,7 @@ export default function NewProject(props) {
                 "Tell Me More About Your World:"}
             </p>
             { display === 'main' ?
-                <BoxSelector 
+            <BoxSelector 
                 leftImageSrc="./assets/images/bird_DARK.svg"
                 rightImageSrc="./assets/images/compass_DARK.svg"
 
@@ -56,21 +45,10 @@ export default function NewProject(props) {
             />
             : null }
             { display === "form" ?
-            <div className="new-project-area">
-                <NameField 
-                    label="Project Name"
-                    value={newProjectForm.name}
-                    changeHandler={(e) => {setNewProjectForm('name', e.target.value)}}
-                />
-                <DescriptionField 
-                    label="Project Description"
-                    value={newProjectForm.description}
-                    changeHandler={(e) => {setNewProjectForm('description', e.target.value)}}
-                />
-                <button
-                    onClick={sendForm}
-                >Create</button>
-            </div>
+            <ProjectForm 
+                onSend={sendForm}
+                buttonLabel="Create"
+            />
             : null }
         </div>
     )
