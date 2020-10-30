@@ -6,8 +6,6 @@
     categories: [
         {
             name: String,
-            description: String,
-            image: String,
             element_content: [
                 {
                     name: String,

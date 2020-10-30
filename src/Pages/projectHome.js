@@ -60,6 +60,7 @@ export default function ProjectHome(props) {
                 />
                 <RoundIconButton 
                     iconSrc="./assets/images/plus_LIGHT.svg"
+                    onClick={() => { appInfo.set.page("categoryCreation") }}
                 />
                 </div>
             : null }

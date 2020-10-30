@@ -43,5 +43,9 @@ Special Classes
 */
 
 .noselect {
-    user-select: none;
+    user-select: none !important;
+}
+
+.invisible {
+    display: none !important;
 }

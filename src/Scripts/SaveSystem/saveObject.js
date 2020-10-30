@@ -13,12 +13,10 @@ export default function createSaveObject(name = "", description = "", image = ""
 // Creates a category for a given save object, this function will
 // return the modified save object.
 
-export function createCategory(saveObj = {}, name = "", description = "", image = "") {
+export function createCategory(saveObj = {}, name = "") {
     let newSaveObj = { ...saveObj };
     let category = {
-        name, 
-        description, 
-        image,
+        name,
         element_content: [],
         elements: []
     }
@@ -59,3 +57,12 @@ export function createElement(
     newCategory.elements.push(element);
     return newCategory;
 }
+
+export const fieldTypes = [
+    { value: 'textarea', label: 'Long Text' },
+    { value: 'input', label: 'Short Text' },
+    { value: 'table-field', label: 'Information Table Field'},
+    { value: 'range-slider', label: 'Range Slider' },
+    { value: 'select', label: 'Option Selector' },
+    { value: 'article-link', label: 'Article Link' }
+];

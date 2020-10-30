@@ -26,10 +26,13 @@ export default function ProjectNavbar(props) {
             }`} 
             key={`nav-name-${id}`}
             onClick={ id === 0 ? 
-                () => {appInfo.set.page("projectHome")} : 
+                () => {
+                    appInfo.set.navPage(id);
+                    appInfo.set.page("projectHome");
+                } : 
                 () => { 
-                    app.set.navPage(id);
-                    app.set.page("categoryHome");
+                    appInfo.set.navPage(id);
+                    appInfo.set.page("categoryHome");
                 } }
             >
                 <p>{name}</p>
