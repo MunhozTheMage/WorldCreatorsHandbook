@@ -122,6 +122,8 @@ export default function CategoryCreation(props) {
 
             console.log(newSave);
             appInfo.set.loadedSaveFile({ data: newSave, dir });
+            appInfo.set.navPage(appInfo.get.loadedSaveFile.data.categories.length);
+            appInfo.set.page("categoryHome");
         }
     }
 

@@ -1,0 +1,83 @@
+.category-home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.category-home .page-content {
+    background: #FFF8DC;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-home .page-content h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 7vh;
+    margin: 3.4vh 0;
+    color: #968E78;
+    font-family: "Playfair Display", serif;
+}
+
+.category-home .page-content .articles-list {
+    flex: 1 1 auto;
+    padding: 4vw 6vw;
+    overflow: hidden scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-home .page-content .articles-list .article-button {
+    background: #ddd1ad2d;
+    border: 3px solid #CDC3A5;
+    height: 193px;
+    display: flex;
+    overflow: hidden;
+    max-width: 1120px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.category-home .page-content .articles-list .article-button .image {
+    height: 100%;
+    width: 190px;
+    border-right: 3px solid #CDC3A5;
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.category-home .page-content .articles-list .article-button .article-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-home .page-content .articles-list .article-button .article-info h2 {
+    width: 40%;
+    flex-shrink: 0;
+    font-size: 45px;
+    margin-right: 5%;
+    text-align: center;
+    color: #6c685ccc;
+    font-family: "Redressed", cursive;
+}
+
+.category-home .page-content .articles-list .article-button .article-info p {
+    text-align: justify;
+    margin-right: 3.4%;
+    font-size: 16px;
+    color: #6C685C;
+    font-family: 'Courier Prime', monospace;
+}
+
+.category-home .buttons-menu {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
